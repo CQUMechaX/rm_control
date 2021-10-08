@@ -59,13 +59,7 @@ target_link_libraries(test_kalman rm_common ${catkin_LIBRARIES})
 
 # Fix rm_msgs generation problem
 # See https://answers.ros.org/question/73048
-add_dependencies(command_sender rm_msgs)
-add_dependencies(heat_limit rm_msgs)
-add_dependencies(power_limit rm_msgs)
-add_dependencies(service_caller rm_msgs)
-add_dependencies(target_cost_function rm_msgs)
-add_dependencies(Ip_filter rm_msgs)
-add_dependencies(referee rm_msgs)
+add_dependencies(rm_common rm_msgs)
 
 #############
 ## Install ##
